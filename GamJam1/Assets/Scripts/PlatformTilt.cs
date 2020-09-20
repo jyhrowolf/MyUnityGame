@@ -3,7 +3,7 @@
 public class PlatformTilt : MonoBehaviour
 {
     public float MaxTilt = 20.0f;
-    public float TSpeed = 25.0f;
+    public float TSpeed = 250.0f;
     public Vector3 CRotation;
     float Xmax;
     float Xmin;
