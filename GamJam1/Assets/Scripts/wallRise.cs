@@ -15,7 +15,6 @@ public class wallRise : MonoBehaviour
     void Start()
     {
         pos = player.GetComponent<Transform>();
-        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
