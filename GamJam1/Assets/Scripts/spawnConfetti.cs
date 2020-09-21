@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class spawnConfetti : MonoBehaviour
 {
-    public GameObject ConeConfetti;
-    public GameObject Player;
-    private Transform pos;
-    public void Start()
+    public GameObject coneConfetti;
+    public GameObject player;
+    void OnTriggerEnter(Collider other)
     {
-        pos = Player.GetComponent<Transform>();
-        GameObject ob = Instantiate(ConeConfetti,pos.position,Quaternion.LookRotation(transform.up,-transform.forward));
+        GameObject ob = Instantiate(coneConfetti,player.transform.position,Quaternion.LookRotation(transform.up,-transform.forward));
         Destroy(ob,3.0f);
     }
 }
